@@ -20,6 +20,7 @@ int main(void) {
 	window = glfwCreateWindow(800, 600, "PoolTable", nullptr, nullptr);
 	//window = glfwCreateWindow(800, 600, "My 1st P3D Project", glfwGetPrimaryMonitor(), nullptr); // Full screen
 	if (!window) {
+<<<<<<< HEAD
 		glfwTerminate();//Fecha a library glfw
 		return -1;
 	}
@@ -39,3 +40,23 @@ int main(void) {
 	glfwTerminate();//Fecha a library glfw
 	return 0;
 }
+=======
+		glfwTerminate();
+		return -1;
+	}
+
+	glfwMakeContextCurrent(window);//faz com que a janela que está em argumento seja a que está ativa na thread.
+
+	while (!glfwWindowShouldClose(window)) {//glfwWindowShouldClose(window)-pedido de fecho da janela, pode ser no Alt-F4 ou no ícone de fecho
+		glClear(GL_COLOR_BUFFER_BIT);
+		glfwSwapBuffers(window);
+
+		glfwPollEvents();
+	}
+
+	glfwDestroyWindow(window);//Destrói imediatamene a janela
+
+	glfwTerminate();//Termina a biblioteca glfw
+	return 0;
+}
+>>>>>>> a58c8d3dd1ddb37b5337c011d0925532c0c99196
