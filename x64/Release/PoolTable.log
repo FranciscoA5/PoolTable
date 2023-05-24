@@ -1,0 +1,9 @@
+﻿  Main.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\GLFW\glfw3.h(123): message : see previous definition of 'APIENTRY'
+     Creating library C:\Users\f-inf\source\repos\PoolTable\x64\Release\PoolTable.lib and object C:\Users\f-inf\source\repos\PoolTable\x64\Release\PoolTable.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  PoolTable.vcxproj -> C:\Users\f-inf\source\repos\PoolTable\x64\Release\PoolTable.exe
