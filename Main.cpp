@@ -72,7 +72,7 @@ int main(void) {
 
 	while (!glfwWindowShouldClose(window)) {//Espera pelo pedido de fecho da janela(Alt-F4 ou botão)
         
-        glClearColor(0.0, 0.8, 0.3, 1.0);
+        glClearColor(0.0, 0.0, 0.0, 0.0);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         glMatrixMode(GL_PROJECTION_MATRIX);

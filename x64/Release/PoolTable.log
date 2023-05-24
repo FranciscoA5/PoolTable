@@ -1,11 +1,10 @@
 ﻿  Main.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\GLFW\glfw3.h(123): message : see previous definition of 'APIENTRY'
-C:\Users\f-inf\source\repos\PoolTable\PoolTable\Main.cpp(75,40): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
      Creating library C:\Users\f-inf\source\repos\PoolTable\x64\Release\PoolTable.lib and object C:\Users\f-inf\source\repos\PoolTable\x64\Release\PoolTable.exp
   Generating code
   1 of 2 functions (50.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   PoolTable.vcxproj -> C:\Users\f-inf\source\repos\PoolTable\x64\Release\PoolTable.exe
