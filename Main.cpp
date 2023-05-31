@@ -20,22 +20,22 @@ void drawCube()
 {
     GLfloat vertices[] =
     {
-        -8, -3, -1,   -8, -3,  1,   -8,  3,  1,   -8,  3, -1,
-        8, -3, -1,    8, -3,  1,    8,  3,  1,    8,  3, -1,
-        -8, -3, -1,   -8, -3,  1,    8, -3,  1,    8, -3, -1,
-        -8,  3, -1,   -8,  3,  1,    8,  3,  1,    8,  3, -1,
-        -8, -3, -1,   -8,  3, -1,    8,  3, -1,    8, 3, -1,
-        -8, -3,  1,   -8,  3,  1,    8,  3,  1,    8, -3,  1
+        -8, -4, -1,   -8, -4,  1,   -8,  4,  1,   -8,  4, -1,
+        8, -4, -1,    8, -4,  1,    8,  4,  1,    8,  4, -1,
+        -8, -4, -1,   -8, -4,  1,    8, -4,  1,    8, -4, -1,
+        -8,  4, -1,   -8,  4,  1,    8,  4,  1,    8,  4, -1,
+        -8, -4, -1,   -8,  4, -1,    8,  4, -1,    8, 4, -1,
+        -8, -4,  1,   -8,  4,  1,    8,  4,  1,    8, -4,  1
     };
 
     GLfloat colors[] =
     {
-        0, 0, 0,   0, 0, 1,   0, 1, 1,   0, 1, 0,
-        1, 0, 0,   1, 0, 1,   1, 1, 1,   1, 1, 0,
-        0, 0, 0,   0, 0, 1,   1, 0, 1,   1, 0, 0,
-        0, 1, 0,   0, 1, 1,   1, 1, 1,   1, 1, 0,
-        0, 0, 0,   0, 1, 0,   1, 1, 0,   1, 0, 0,
-        0, 0, 1,   0, 1, 1,   1, 1, 1,   1, 0, 1
+        0, 0.2, 0,   0, 0.2, 0,   0, 0.2, 0,   0, 0.2, 0,
+        0, 0.4, 0,   0, 0.4, 0,   0, 0.4, 0,   0, 0.4, 0,
+        0, 0.6, 0,  0, 0.6, 0,   0, 0.6, 0,   0, 0.6, 0,
+        0, 0.8, 0,   0, 0.8, 0,   0, 0.8, 0,   0, 0.8, 0,
+        0, 1, 0,   0, 1, 0,   0, 1, 0,   0, 1, 0,
+        0, 0.4, 0,   0, 0.4, 0,   0, 0.4, 0,   0, 0.4, 0,
     };
 
     static float alpha = 0;
@@ -60,7 +60,7 @@ void drawCube()
 
 
 float cameraDistance = 5.0f;  // Distancia inicial da camara
-const float zoomSpeed = 0.1f; // velocidade do zoom
+const float zoomSpeed = 0.5f; // velocidade do zoom
 
 
 float rotationAngleX = 0.0f;  // Initial rotation angle around X-axis
@@ -68,7 +68,6 @@ float rotationAngleY = 0.0f;  // Initial rotation angle around Y-axis
 float rotationAngleZ = 0.0f;  // Initial rotation angle around Z-axis
 double lastMouseX = 0.0;
 double lastMouseY = 0.0;
-double lastMouseZ = 0.0;
 bool isMouseDragging = false;
 
 int main(void) {
@@ -97,13 +96,13 @@ int main(void) {
 
         glMatrixMode(GL_PROJECTION_MATRIX);
         glLoadIdentity();
-        gluPerspective(150, 800.0/ 600.0, 1, 150);
+        gluPerspective(30, 800.0/ 600.0, 0.1, 100);
 
         glMatrixMode(GL_MODELVIEW_MATRIX);
         glTranslatef(0, 0, -cameraDistance);
         glRotatef(rotationAngleX, 1, 0, 0);
         glRotatef(rotationAngleY, 0, 1, 0);
-        glRotatef(rotationAngleZ, 0, 0, 1);
+        //glRotatef(rotationAngleZ, 0, 0, 1);
         drawCube();
 		glfwSwapBuffers(window);//realizada apos a execucao de todos os commandos de renderizaçao de frames
         
@@ -133,13 +132,10 @@ void cursorPositionCallback(GLFWwindow* window, double xpos, double ypos) {
     if (isMouseDragging) {
         double deltaX = xpos - lastMouseX;
         double deltaY = ypos - lastMouseY;
-        double deltaZ = ypos - lastMouseY;
         rotationAngleX += static_cast<float>(deltaY) * 0.1f;
         rotationAngleY += static_cast<float>(deltaX) * 0.1f;
-        rotationAngleZ += static_cast<float>(deltaZ) * 0.1f;
         lastMouseX = xpos;
         lastMouseY = ypos;
-        lastMouseZ = ypos;
     }
 }
 
