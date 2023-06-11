@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJLoad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadShaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OBJLoad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadShaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="triangles.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball2.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball1.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball3.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball4.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball5.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball6.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball7.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball8.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball9.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball10.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball11.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball12.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball13.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball14.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Ball15.mtl">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="triangles.vert">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="Ball2.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball1.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball3.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball4.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball5.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball6.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball7.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball8.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball9.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball10.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball11.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball12.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball13.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball14.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+    <Object Include="Ball15.obj">
+      <Filter>Resource Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="PoolBalluv2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv3.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv4.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv5.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv6.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv7.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv8.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv9.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv10.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv11.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv12.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv13.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv14.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="PoolBalluv15.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
